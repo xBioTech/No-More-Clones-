@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+    background-color: #121212;
+    color: white;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    resize: none;
+    width: 400px;
+    height: 400px;
+    padding: 1em 2em;
+    background-color: #404040;
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 12px;
+    
+}
+
+
+textarea::-webkit-scrollbar-thumb {
+    background: #7BE39A;   
+    border-radius: 5px;
+}
+
+.maincard{
+    display: flex;
+}
+
+.inputcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.removeclones{
+    margin-top: 1em;
+    background-color: #7BE39A;
+    color: #404040;
+    border: none;
+    padding: 1em 5em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.removeclones:hover{
+    transform: scale(1.1);
+    transition: transform .20s ease;
+}
+
+.removeclones:active {
+    transform: scale(0.98);
+}
