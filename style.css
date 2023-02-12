@@ -31,6 +31,7 @@ textarea::-webkit-scrollbar-thumb {
 
 .maincard{
     display: flex;
+    justify-content: space-evenly;
 }
 
 .inputcard{
@@ -39,7 +40,12 @@ textarea::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
 }
-
+.outputcard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 .removeclones{
     margin-top: 1em;
     background-color: #7BE39A;
@@ -57,4 +63,45 @@ textarea::-webkit-scrollbar-thumb {
 
 .removeclones:active {
     transform: scale(0.98);
+}
+
+.print{
+    margin-top: 1em;
+    background-color: #7BE39A;
+    color: #404040;
+    border: none;
+    padding: 1em 5.6em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.copy{
+    margin-top: 1em;
+    background-color: #7BE39A;
+    color: #404040;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.print:hover{
+    transform: scale(1.1);
+    transition: transform .20s ease;
+}
+
+.print:active {
+    transform: scale(0.98);
+}
+.copy:hover{
+    transform: scale(1.1);
+    transition: transform .20s ease;
+}
+
+.copy:active {
+    transform: scale(0.98);
+}
+
+.outputcardbtn{
+    display: flex;
+    gap: 1em;
 }
