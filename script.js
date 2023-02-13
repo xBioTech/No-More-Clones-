@@ -2,6 +2,7 @@ const inputTextArea = document.querySelector(".inputtextarea");
 const runCodeBtn = document.querySelector(".removeclones");
 const outputTextArea = document.querySelector(".outputtextarea");
 const copyBtn = document.querySelector(".copy");
+const printBtn = document.querySelector(".print");
 
 function removeClones(input){
     return [...new Set (input.split(" "))]
@@ -21,3 +22,9 @@ function copyToClipboard(){
 }
 
 copyBtn.addEventListener("click", copyToClipboard);
+
+function printOutput(){
+    window.print();
+}
+
+printBtn.addEventListener("click", printOutput);
