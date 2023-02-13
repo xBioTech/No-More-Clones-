@@ -5,7 +5,7 @@ const copyBtn = document.querySelector(".copy");
 const printBtn = document.querySelector(".print");
 
 function removeClones(input){
-    return [...new Set (input.split(" "))]
+    return [...new Set (input.split("\n"))]
 }
 
 
