@@ -12,7 +12,7 @@ function removeClones(input){
 runCodeBtn.addEventListener("click", () => {
     const input = inputTextArea.value;
     const result = removeClones(input);
-    outputTextArea.textContent = result.join(" ");
+    outputTextArea.textContent = result.join("\n");
 })
 
 function copyToClipboard(){
